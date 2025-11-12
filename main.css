@@ -5,8 +5,9 @@
 
 }
 
-htmal, body {
-height: 100px;
+html, body {
+    scroll-behavior: smooth;
+    height: 100px;
 
 }
 
@@ -101,7 +102,8 @@ nav ul li a:active{
   margin:0 auto;
   flex:1;
   /* display:grid; create a grid */
-  display:grid;
+  /* display:grid; */
+
   grid-template-columns:1fr 300px; /* contenido | sidebar */
 
 }
@@ -197,6 +199,33 @@ main section{
 .section-b{
     background-color: rgb(136,231,187);
 }
+
+.content {
+  position: relative;
+  padding: 20px;
+}
+
+/* Button that scrolls *with* the page */
+.back-button {
+  position: sticky;      /* Makes it "stick" when scrolling */
+  bottom: 20px;          /* Distance from bottom when it sticks */
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-family: sans-serif;
+  float: right;          /* Keeps it to the right side */
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
 
 /* footer */
 
